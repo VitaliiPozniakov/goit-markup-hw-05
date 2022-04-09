@@ -358,6 +358,8 @@ img {
   right: 0;
   bottom: 0;
   background-color: var(--background-backdrop);
+
+  z-index: 1;
 }
 
 .backdrop.is-hidden {
