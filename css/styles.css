@@ -182,7 +182,7 @@ img {
   margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -237,12 +237,6 @@ img {
 
   background-color: var(--accent-color);
   border-radius: 2px;
-  /* opacity: 0; */
-}
-
-.site-nav .link:hover .current::after {
-  opacity: 1;
-  background-color: red;
 }
 
 .contacts-nav .link {
@@ -756,6 +750,8 @@ img {
   width: 370px;
   height: 294px;
   background-color: var(--background-description-portfolio);
+
+  opacity: 0;
 }
 
 .card-description-text {
@@ -770,6 +766,10 @@ img {
   font-size: 18px;
   line-height: 1.55;
   color: var(--primari-white-color);
+}
+
+.cards-item:hover .card-description {
+  opacity: 1;
 }
 
 .cards-item .card-thumb {
