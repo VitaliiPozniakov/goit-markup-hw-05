@@ -16,6 +16,7 @@
   --background-icon-footer-color: rgba(255, 255, 255, 0.1);
   --background-backdrop: rgba(0, 0, 0, 0.2);
   --background-hero: rgba(47, 48, 58, 1);
+  --background-description: rgba(47, 48, 58, 0.8);
 }
 
 /*----------------------------- Палитра:-----------------------------
@@ -459,6 +460,35 @@ img {
   width: 270px;
 }
 
+.description {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 370px;
+  height: 70px;
+  background-color: var(--background-description);
+}
+
+.description-text {
+  font-weight: 700;
+
+  line-height: 1.14;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.activities-item .thumb {
+  position: relative;
+}
+
+.activities-item .link {
+  text-decoration: none;
+}
 /*----------------------------- Activities -----------------------------*/
 
 .section.activities {
