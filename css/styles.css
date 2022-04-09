@@ -16,7 +16,8 @@
   --background-icon-footer-color: rgba(255, 255, 255, 0.1);
   --background-backdrop: rgba(0, 0, 0, 0.2);
   --background-hero: rgba(47, 48, 58, 1);
-  --background-description: rgba(47, 48, 58, 0.8);
+  --background-description-index: rgba(47, 48, 58, 0.8);
+  --background-description-portfolio: rgba(33, 150, 243, 0.9);
 }
 
 /*----------------------------- Палитра:-----------------------------
@@ -460,7 +461,7 @@ img {
   width: 270px;
 }
 
-.description {
+.features-description {
   position: absolute;
   bottom: 0;
 
@@ -470,19 +471,17 @@ img {
 
   width: 370px;
   height: 70px;
-  background-color: var(--background-description);
+  background-color: var(--background-description-index);
 }
 
-.description-text {
+.features-description-text {
   font-weight: 700;
-
   line-height: 1.14;
-  text-align: center;
-  color: #ffffff;
+  color: var(--primari-white-color);
   text-transform: uppercase;
 }
 
-.activities-item .thumb {
+.activities-item .features-thumb {
   position: relative;
 }
 
@@ -746,4 +745,31 @@ img {
 /* Убирает подчеркивание с ссылок */
 .cards-item .card-link {
   text-decoration: none;
+}
+
+.card-description {
+  position: absolute;
+  bottom: 0;
+
+  width: 370px;
+  height: 294px;
+  background-color: var(--background-description-portfolio);
+}
+
+.card-description-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 322px;
+  height: 168px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--primari-white-color);
+}
+
+.cards-item .card-thumb {
+  position: relative;
 }
