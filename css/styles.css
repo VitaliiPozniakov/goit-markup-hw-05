@@ -218,11 +218,11 @@ img {
   color: var(--accent-color);
 }
 
-/* .main-nav .item {
+/* .site-nav .item {
   display: block;
 } */
 
-.site-nav .link::after {
+.current::after {
   position: absolute;
   bottom: 0%;
 
@@ -236,7 +236,7 @@ img {
   /* opacity: 0; */
 }
 
-.site-nav .link:hover .link::after {
+.site-nav .link:hover .current::after {
   opacity: 1;
   background-color: red;
 }
