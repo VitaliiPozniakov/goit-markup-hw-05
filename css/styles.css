@@ -369,8 +369,7 @@ img {
   z-index: 1;
 
   opacity: 1;
-
-  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function);
 }
 
 .is-hidden {
